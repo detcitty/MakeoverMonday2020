@@ -1,3 +1,10 @@
 import datadotworld as dw
-ds = dw.load_dataset('jonloyens/intermediate-data-world', auto_update=True)
-print(ds)
+import pandas as pd
+ds = dw.load_dataset('makeovermonday/2020w16', auto_update=True)
+print(ds.dataframes)
+#print(ds)
+#print(ds.describe())
+data = ds.tables['ghg_emissions_by_life_cycle_stage_ourworldindata_upload']
+df = pd.DataFrame(data)
+print(df)
+#print(data)
