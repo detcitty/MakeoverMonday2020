@@ -1,2 +1,4 @@
 .DS_Store
 default.profraw
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
